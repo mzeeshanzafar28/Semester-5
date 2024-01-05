@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/calculator.png">
+    <title>Calculator by Zeeshan</title>
+</head>
+<body>
+<div id="main-div">
+    <div id="calc-div">
+        <input type="text" id="screen" readonly value="0">
+        <br>
+        <button id="1" onclick="inserter(this.id)">1</button>
+        <button id="2" onclick="inserter(this.id)">2</button>
+        <button id="3" onclick="inserter(this.id)">3</button>
+        <br>
+        <button id="4" onclick="inserter(this.id)">4</button>
+        <button id="5" onclick="inserter(this.id)">5</button>
+        <button id="6" onclick="inserter(this.id)">6</button>
+        <br>
+        <button id="7" onclick="inserter(this.id)">7</button>
+        <button id="8" onclick="inserter(this.id)">8</button>
+        <button id="9" onclick="inserter(this.id)">9</button>
+        <br>
+        <button id="0" onclick="inserter(this.id)">0</button>
+        <button id="+" onclick="inserter(this.id)">+</button>
+        <button id="-" onclick="inserter(this.id)">-</button>
+        <br>
+        <button id="x" onclick="inserter(this.id)">x</button>
+        <button id="/" onclick="inserter(this.id)">/</button>
+        <button id="=" onclick="inserter(this.id)">=</button>
+        <br>
+        <button id="c" onclick="inserter(this.id)">C</button>
+        <button id="esc" onclick="inserter(this.id)">ESC</button>
+        <button id="." onclick="inserter(this.id)">.</button>
+    </div>
+</div>
+<h1 id="logo">github@mzeeshanzafar28</h5>
+    
+
+<style>
+#logo{
+    text-align: center;
+    opacity: 0.1;
+
+}
+#main-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:cornflowerblue;
+    position: fixed;
+    margin: 11% 40%;
+    padding: 5px 5px;
+    box-shadow: 2px 2px 2px 3px rgba(5, 4, 4, 0.2);
+    border-radius: 5px;
+}
+
+#calc-div{
+    display: block;
+}
+
+body{
+    background-color:rgb(65, 15, 125);
+}
+
+button{
+    width: 31.832%;
+    height: 30px;
+    padding: 0 3.2%;
+    margin: 2% 0;
+    background-color: rgba(10, 173, 195, 0.867);
+    border-radius: 5px;
+}  
+
+#screen{
+    height: 33px;
+    margin-bottom: 5%;
+    border-radius: 5px;
+    background-color:slategrey;
+    font-size:medium;
+    font-weight: bold;
+}
+#screen:hover{
+    cursor:default;
+}
+</style>
+
+<script>
+    const screen = document.getElementById("screen");
+    const esc = document.getElementById("esc");
+    const c = document.getElementById("c");
+
+    const one = document.getElementById("1");
+    const two = document.getElementById("2");
+    const three = document.getElementById("3");
+    const four = document.getElementById("4");
+    const five = document.getElementById("5");
+    const six = document.getElementById("6");
+    const seven = document.getElementById("7");
+    const eight = document.getElementById("8");
+    const nine = document.getElementById("9");
+    const zero = document.getElementById("0");
+    const plus = document.getElementById("+");
+    const minus = document.getElementById("-");
+    const mul = document.getElementById("x");
+    const div = document.getElementById("/");
+    const dec = document.getElementById(".");
+
+    var prev = '';
+    opr = '';
+    function inserter(id)
+    {
+        txt = screen.value;
+
+        if (txt == '0')
+        {
+            txt = '';
+        }
+        if ((id == '+' || id == '-' || id == 'x' || id == '/') && !txt.includes('+') && !txt.includes('-') && !txt.includes('x') && !txt.includes('/'))
+        {
+            if (txt != '0')
+            {
+                prev = txt;
+                opr = id;
+
+            }
+        }
+        
+        if (id == '=')
+        {
+            if (txt.endsWith('+') || txt.endsWith('-') || txt.endsWith('x') || txt.endsWith('/')) {
+            return;
+            }
+            if (screen.value == '0')
+            {
+                return;
+            }
+
+            if (txt != '0')
+            {
+                if (opr == '+')
+                {
+                    txt = parseFloat(prev) + parseFloat(txt.split(/[+\-x/]/)[1]);
+                }
+                else if (opr == '-')
+                {
+                    txt = parseFloat(prev) - parseFloat(txt.split(/[+\-x/]/)[1]);
+                }
+                else if (opr == 'x')
+                {
+                    txt = parseFloat(prev) * parseFloat(txt.split(/[+\-x/]/)[1]);
+                }
+                else if (opr == '/')
+                {
+                    txt = parseFloat(prev) / parseFloat(txt.split(/[+\-x/]/)[1]);
+                }
+                screen.value = txt;
+                return;
+                
+            }
+        }
+        if (id == 'esc')
+        {
+            if (screen.value != '0')
+            {
+                txt = txt.slice(0, -1);
+                screen.value = txt;
+                if (screen.value == '')
+            {
+                screen.value = '0';
+            }
+                return;
+            }
+            if (screen.value == '0')
+            {
+                return;
+            }
+
+        }
+        if (id == 'c')
+        {
+                screen.value = '0';
+                return;
+            }
+        
+            if ((id == '+' || id == '-' || id == 'x' || id == '/') && (txt.includes('+') || txt.includes('-') || txt.includes('x') || txt.includes('/')))
+        {
+            return;
+        }
+
+        if (id == '.' && txt.includes('.'))
+        {
+            return;
+        }
+
+        screen.value = txt  + id;
+
+        }
+
+
+
+</script>
+
+</body>
+</html>

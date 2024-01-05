@@ -1,0 +1,91 @@
+getno proc
+	push ax
+	push bx
+	push cx
+	push dx
+	mov pno,0
+	inputAgain:
+		mov ah,01h
+		int 21h
+		cmp al,13
+		je EndInput
+		sub al,48
+		mov ah,0h
+		mov cno,ax
+		mov ax,pno
+		mul ten
+		add ax,cno
+		mov pno, ax
+		jmp inputAgain
+	EndInput:
+	pop dx
+	pop cx
+	pop bx
+	pop ax
+		ret
+getno endp
+
+showno proc
+	push ax
+	push bx
+	push cx
+	push dx
+	mov ax, pno
+	mov cx,0
+	DivAgain:
+		mov dx,0h
+		div ten
+		push dx
+		inc cx
+		cmp ax,0h
+		jne DivAgain
+	ShowNum:
+		mov ah,02h
+		pop dx
+		add dx,48
+		int 21h
+		loop ShowNum
+	pop dx
+	pop cx
+	pop bx
+	pop ax
+		ret
+showno endp
+
+getStr proc
+	push ax
+	push bx
+	push cx
+	push dx
+	mov si, offset arr1
+	mov cx, 0
+	takeStr:
+		mov ah, 01h
+		int 21h
+		cmp al, 13
+		je EndStrInp
+		mov [si], al
+		inc si
+		jmp takeStr
+	EndStrInp:
+		pop dx
+		pop cx
+		pop bx
+		pop ax
+	ret
+getStr endp
+
+coutStr proc
+	push ax
+	push bx
+	push cx
+	push dx
+	mov dx, offset arr1
+	mov ah, 09h
+	int 21h
+	pop dx
+	pop cx
+	pop bx
+	pop ax
+	ret
+coutStr endp

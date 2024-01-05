@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/stopwatch.png">
+    <title>Stop Watch by Zeeshan</title>
+</head>
+<body>
+    <div id="main-div">
+        <div id="watch-div" >
+            <input id="count-text" value="00:00:00" readonly disabled></input>
+            <button id="start-btn">Start</button>
+            <button id="stop-btn">Stop</button>
+            <button id="color-btn">Color</button>
+            <button id="reset-btn">Reset</button>
+        </div>
+    </div>
+    <h1 id="logo">github@mzeeshanzafar28</h1>
+
+
+    <style>
+body{
+    background-color: rgb(140, 95, 160);
+}
+#logo{
+    /* background-color: red; */
+    text-align: center;
+    opacity: 0.1;
+}
+#main-div{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25dvh;
+}
+
+#watch-div{
+    background-color:darkmagenta;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px 2px rgb(49, 47, 47);
+
+
+}
+#count-text{
+    
+    height: 100%;
+    width: 98%;
+    display: block;
+    text-align: center;
+    color: black;
+    padding-top: 10dvh;
+    padding-bottom: 7dvh;
+    margin-top: 5dvh;
+    margin-bottom: 5dvh;
+    font-size:xx-large;
+    border: none;
+    background-color:darkmagenta ;
+
+}
+button {
+height: 5dvh;
+width: 24.2%;
+border-radius: 10px;
+background-color: rgb(150, 34, 150);
+border-color:thistle;
+}
+    </style>
+
+    <script>
+        const startBtn = document.getElementById('start-btn');
+        const stopBtn = document.getElementById('stop-btn');
+        const colorBtn = document.getElementById('color-btn');
+        const resetBtn = document.getElementById('reset-btn');
+        const countText = document.getElementById('count-text');
+
+        startBtn.addEventListener('click',() => {
+            txt = countText.value;
+            hrs = parseInt(txt.split(":")[0]);
+            mins = parseInt(txt.split(":")[1]);
+            secs = parseInt(txt.split(":")[2]);
+            interval = setInterval(() => {
+            secs++;
+            if (secs == 59)
+            {
+                mins++;
+                secs = 0;
+            }
+            if (mins == 59)
+            {
+                hrs++;
+                secs = 0;
+                mins=0;
+            }
+            if (secs<10)
+            {
+                secs = "0" + secs;
+            }
+
+            countText.value = hrs + ":" + mins + ":" + secs;
+            },100);
+
+        });
+
+        stopBtn.addEventListener('click',() => {
+            clearInterval(interval);
+        });
+
+        resetBtn.addEventListener('click',() => {
+            clearInterval(interval);
+            countText.value = "00:00:00";
+
+        });
+
+        colorBtn.addEventListener('click',() => {
+            col = '#' + Math.floor(Math.random()*16777215).toString(16);
+            countText.style.backgroundColor = col;
+            document.getElementById('watch-div').style.backgroundColor = col; 
+        });
+
+    </script>
+
+</body>
+</html>

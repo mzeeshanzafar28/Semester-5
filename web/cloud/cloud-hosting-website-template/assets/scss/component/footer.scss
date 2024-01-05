@@ -1,0 +1,169 @@
+footer{
+    .top-sc-01{
+        position: relative;
+        width:100%;
+        padding:1.25rem 0;
+
+        .wrapper{
+            display:block;
+            margin:1.25rem 0;
+            background:#0a0a0a;
+            position: relative;
+            border-radius:.3125rem;
+            
+            .content{
+                padding:1.25rem;
+                position: relative;
+                display:block;
+
+                ol{
+                    li{
+                        display:flex;
+                        flex-direction:column;
+                        justify-content:center;
+                        padding:.625rem .3125rem .625rem 5rem;
+                        position: relative;
+
+                        .icon{
+                            position: absolute;
+                            left:0;
+                            display:flex;
+                            height:3.75rem;
+                            width:3.75rem;
+                            display:flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-size:1.5625rem;
+                            color:$color-primary;
+                            background:$icons-color;
+                            border-radius:50%;
+
+                        }
+
+                        h3{
+                            font-size:1.125rem;
+                            font-weight:bold;
+                            color:$color-primary;
+                            display:block;
+                        }
+
+                        h5{
+                            font-size:1rem;
+                            display:block;
+                            margin:.3125rem 0 0 0;
+                            color:$color-primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .main-footer{
+        position: relative;
+        display:block;
+        padding:1.25rem 0;
+
+        .wrapper{
+            display:block;
+            margin:1.25rem 0;
+            position: relative;
+
+            form{
+                .form-group{
+                    display:block;
+                    width:100%;
+                    margin:.625rem 0;
+                    position: relative;
+
+                    .form-control{
+                        min-height: 2.8125rem;
+                        height:2.8125rem;
+                        border-radius:0;
+                        position: relative;
+                        border:0;
+                        box-shadow:none;
+                        margin:.625rem 0;
+                        display:inline-block;
+                        width:100%;
+                        border-radius:1.25rem;
+
+                    }
+                }
+            }
+
+            .link-items{
+                display:inline-block;
+                width:100%;
+                position: relative;
+                margin:.625rem 0;
+
+                ul{
+                    li{
+                        display:block;
+                        padding:.4375rem 0;
+                        position: relative;
+                        font-size:1rem;
+                        font-weight:600;
+                        color:$color-primary;
+
+                        a{
+                            color:$color-primary;
+                        }
+                    }
+                }
+            }
+
+            h2{
+                font-size:1.5625rem;
+                color:$icons-color;
+                display:block;
+                margin:.625rem 0;
+                text-transform:capitalize;
+                letter-spacing:.1px;
+                font-weight:bold;
+            }
+
+            .image{
+                display:block;
+                margin:0 0 .625rem 0;
+                position: relative;
+
+            }
+
+            p{
+                font-size:.9375rem;
+                color:$text-primary;
+                line-height:1.5625rem;
+                letter-spacing:.1px;
+                display:block;
+                margin:.625rem 0;
+
+            }
+
+            .social-media{
+                display:block;
+                margin:.625rem 0;
+                position: relative;
+
+                ol{
+                    li{
+                        display:inline-block;
+                        margin:.3125rem;
+                        position: relative;
+                        background-color:$icons-color;
+                        height:2.125rem;
+                        width:2.125rem;
+                        line-height: 2.125rem;
+                        text-align: center;
+                        border-radius:50%;
+
+                        &:nth-child(1){
+                            margin-left:0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

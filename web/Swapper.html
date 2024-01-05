@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/logo.png">
+    <title>Swapper by Zeeshan</title>
+</head>
+<body>
+    
+    <div id="main-div">
+        <h1>github@mzeeshanzafar28</h1>
+        <div id="swapper-div">
+            <input type="number" id="val1">
+            <br>
+            <input type="number" id="val2">
+            <br>
+            <button id="swap-btn">Swap</button>
+        </div>
+    </div>
+
+    <style>
+        body{
+            background-color:thistle;
+        }
+        h1{
+            opacity: 0.1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        #main-div{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin: 20dvh 0;
+        }
+        #swapper-div{
+            background-color: antiquewhite;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 30dvh;
+            width: 40dvw;
+        }
+        input{
+            background-color: antiquewhite;
+            border-radius: 5px;
+            width: 20dvw;
+            height: 4dvh;
+            font-size: medium;
+            font-weight: bold;
+        }
+        button{
+            background-color: azure;
+            border-radius: 5px;
+            height: 20%;
+            width: 50%;
+            font-size: large;
+
+        }
+    </style>
+
+    <script>
+        btn = document.getElementById('swap-btn');
+        val1 = document.getElementById('val1');
+        val2 = document.getElementById('val2');
+
+        btn.addEventListener('click', () => {
+            if (val1.value && val2.value)
+            {
+                x = val1.value;
+                val1.value = val2.value;
+                val2.value = x;
+                
+            }
+        });
+    </script>
+    
+
+</body>
+</html>

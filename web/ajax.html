@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX</title>
+</head>
+<body>
+
+    <form id="wrapper" method="POST" action="ajax.php">
+        <input id="username" name="username" type="text" placeholder="username">
+        <small id="responser"></small>
+        <input id="password" name="password" type="password" placeholder="password">
+        <button id="login">Login</button>
+    </form>
+
+    <style>
+        body{
+            /* background-color: rgb(88, 57, 119); */
+            background-image: url('auth.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+	    height:68vh;
+        }
+        #responser{
+            font-size: larger;
+            font-weight: bold;
+            margin-left: -8vw;
+            text-shadow: 1px 1px darkgreen;
+        }
+        #wrapper{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30vh;
+        }
+        input, button {
+            font-size: large;
+            border-radius: 10px;
+            border: 3px solid black;
+            padding: 5px;
+            margin: 5px;
+            background-color:lightblue;
+            font-weight: bold;
+        }
+    </style>
+    
+    <script>
+
+    var username = document.getElementById("username");
+    var password = document.getElementById("password");
+    var responser = document.getElementById("responser");
+    var login = document.getElementById("login");
+    
+    username.addEventListener("input", () => {
+        var user = username.value;
+        var pass = password.value;
+        var xmlhttp = new XMLHttpRequest();
+        
+        xmlhttp.onreadystatechange = function() {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                if (xmlhttp.responseText == "Valid Username")
+                {
+                    responser.style.color = '#00e600';
+                }
+                else{
+                    responser.style.color = 'rgb(148 3 15)';
+                }
+                document.getElementById("responser").innerText = xmlhttp.responseText;
+            }
+        };
+        xmlhttp.open("GET", "ajax.php?user=" + user, true);
+        xmlhttp.send();
+    });
+
+    login.addEventListener("click", function(event) {
+    event.preventDefault();
+    var user = encodeURIComponent(username.value);
+    var pass = encodeURIComponent(password.value);
+    if (user.length < 4 || pass.length < 4) {
+        alert("Please Fill in the credentials properly");
+        return;
+    }
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            console.log(this.responseText);
+            if (this.responseText == 'Success') {
+                window.location.replace("https://github.com/mzeeshanzafar28");
+            } else {
+                alert("Invalid Credentials");
+            }
+        } else if (this.readyState == 4 && this.status != 200) {
+            alert("404 Unauthorized || Invalid Pass");
+        }
+    };
+    xmlhttp.open("GET", "ajax.php?login=attempt&username=" + user + "&password=" + pass, true);
+    xmlhttp.send();
+});
+
+
+
+    </script>
+</body>
+</html>

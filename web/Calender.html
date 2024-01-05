@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/calender.png">
+    <title>Calender by Zeeshan</title>
+</head>
+<body>
+    <h1>github@mzeeshanzafar28</h1>
+    <div id="main-div">
+        <div id="calender-div">
+            <input type="text" id="date-now" readonly>
+            <br>
+            <button id="start">Start</button>
+            <button id="stop">Stop</button>
+        </div>
+    </div>
+
+    <style>
+        body{
+            background-color:darkseagreen;
+        }
+        h1{
+            text-align: center;
+            opacity: 0.1;
+        }
+        #main-div{
+        /* background-color: aqua; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:30dvh 0;
+        }
+        #calender-div{
+            justify-content: center;
+            align-items: center;
+            background-color:bisque;
+            padding: 40px;
+            position: sticky;
+        }
+        input{
+            border-radius:5px;
+            width: 30dvw;
+            height: 5dvh;
+            background-color: bisque;
+            font-size: large;
+            font-weight: bold;
+        }
+        button{
+            width: 15dvw;
+            height: 4dvh;
+            border-radius: 7px;
+            background-color:thistle;
+            margin-top: 20px;
+        }
+    </style>
+
+<script>
+    const screen = document.getElementById('date-now');
+    const btnStart = document.getElementById('start');
+    const btnStop = document.getElementById('stop');
+    btnStart.addEventListener('click', () => {
+        x = setInterval(() => {
+        screen.value = new Date();
+        },500)
+    });
+
+    btnStop.addEventListener('click', () => {
+       clearInterval(x);
+    });
+
+
+</script>
+
+</body>
+</html>
