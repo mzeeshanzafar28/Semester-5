@@ -93,12 +93,7 @@ The above copyright notice and this permission notice shall be included in all c
                             <p>Notifications</p>
                         </a>
                     </li>
-                    <li class="nav-item active active-pro">
-                        <a class="nav-link active" href="upgrade.php">
-                            <i class="nc-icon nc-alien-33"></i>
-                            <p>Upgrade to PRO</p>
-                        </a>
-                    </li>
+                   
                 </ul>
             </div>
         </div>

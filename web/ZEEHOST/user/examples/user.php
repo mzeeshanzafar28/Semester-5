@@ -46,9 +46,7 @@ The above copyright notice and this permission notice shall be included in all c
     -->
             <div class="sidebar-wrapper">
                 <div class="logo">
-                    <a href="http://www.creative-tim.com" class="simple-text">
-                        Creative Tim
-                    </a>
+                    <a class="simple-text" href = 'https://github.com/mzeeshanzafar28'>ZEEHOST</a>
                 </div>
                 <ul class="nav">
                     <li>
@@ -93,12 +91,7 @@ The above copyright notice and this permission notice shall be included in all c
                             <p>Notifications</p>
                         </a>
                     </li>
-                    <li class="nav-item active active-pro">
-                        <a class="nav-link active" href="upgrade.php">
-                            <i class="nc-icon nc-alien-33"></i>
-                            <p>Upgrade to PRO</p>
-                        </a>
-                    </li>
+                   
                 </ul>
             </div>
         </div>
@@ -184,19 +177,19 @@ The above copyright notice and this permission notice shall be included in all c
                                             <div class="col-md-5 pr-1">
                                                 <div class="form-group">
                                                     <label>Company (disabled)</label>
-                                                    <input type="text" class="form-control" disabled="" placeholder="Company" value="Creative Code Inc.">
+                                                    <input type="text" class="form-control" disabled="" placeholder="Company" value="ZeeTech pvt ltd.">
                                                 </div>
                                             </div>
                                             <div class="col-md-3 px-1">
                                                 <div class="form-group">
                                                     <label>Username</label>
-                                                    <input type="text" class="form-control" placeholder="Username" value="michael23">
+                                                    <input type="text" class="form-control" placeholder="Username" value="mzeeshanzafar28">
                                                 </div>
                                             </div>
                                             <div class="col-md-4 pl-1">
                                                 <div class="form-group">
                                                     <label for="exampleInputEmail1">Email address</label>
-                                                    <input type="email" class="form-control" placeholder="Email">
+                                                    <input type="email" class="form-control" placeholder="Email" value="mzeeshanzafar28@gmail.com">
                                                 </div>
                                             </div>
                                         </div>
@@ -204,13 +197,13 @@ The above copyright notice and this permission notice shall be included in all c
                                             <div class="col-md-6 pr-1">
                                                 <div class="form-group">
                                                     <label>First Name</label>
-                                                    <input type="text" class="form-control" placeholder="Company" value="Mike">
+                                                    <input type="text" class="form-control" placeholder="Company" value="Zeeshan">
                                                 </div>
                                             </div>
                                             <div class="col-md-6 pl-1">
                                                 <div class="form-group">
                                                     <label>Last Name</label>
-                                                    <input type="text" class="form-control" placeholder="Last Name" value="Andrew">
+                                                    <input type="text" class="form-control" placeholder="Last Name" value="Zafar">
                                                 </div>
                                             </div>
                                         </div>
@@ -218,7 +211,7 @@ The above copyright notice and this permission notice shall be included in all c
                                             <div class="col-md-12">
                                                 <div class="form-group">
                                                     <label>Address</label>
-                                                    <input type="text" class="form-control" placeholder="Home Address" value="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09">
+                                                    <input type="text" class="form-control" placeholder="Home Address" value="Dogar Town, Multan, Punjab, Pakistan">
                                                 </div>
                                             </div>
                                         </div>
@@ -226,19 +219,19 @@ The above copyright notice and this permission notice shall be included in all c
                                             <div class="col-md-4 pr-1">
                                                 <div class="form-group">
                                                     <label>City</label>
-                                                    <input type="text" class="form-control" placeholder="City" value="Mike">
+                                                    <input type="text" class="form-control" placeholder="City" value="Multan">
                                                 </div>
                                             </div>
                                             <div class="col-md-4 px-1">
                                                 <div class="form-group">
                                                     <label>Country</label>
-                                                    <input type="text" class="form-control" placeholder="Country" value="Andrew">
+                                                    <input type="text" class="form-control" placeholder="Country" value="Pakistan">
                                                 </div>
                                             </div>
                                             <div class="col-md-4 pl-1">
                                                 <div class="form-group">
                                                     <label>Postal Code</label>
-                                                    <input type="number" class="form-control" placeholder="ZIP Code">
+                                                    <input type="number" class="form-control" placeholder="ZIP Code" value="60800">
                                                 </div>
                                             </div>
                                         </div>
@@ -246,7 +239,7 @@ The above copyright notice and this permission notice shall be included in all c
                                             <div class="col-md-12">
                                                 <div class="form-group">
                                                     <label>About Me</label>
-                                                    <textarea rows="4" cols="80" class="form-control" placeholder="Here can be your description" value="Mike">Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</textarea>
+                                                    <textarea rows="4" cols="80" class="form-control" placeholder="Here can be your description" value="Mike">Be patient, greate things take time.</textarea>
 </div>
 </div>
 </div>
@@ -259,22 +252,22 @@ The above copyright notice and this permission notice shall be included in all c
 <div class = 'col-md-4'>
 <div class = 'card card-user'>
 <div class = 'card-image'>
-<img src = 'https://ununsplash.imgix.net/photo-1431578500526-4d9613015464?fit=crop&fm=jpg&h=300&q=75&w=400' alt = '...'>
+<img src = 'https://ununsplash.imgix.net/photo-1431578500526-4d9613015464?fit = crop&fm = jpg&h = 300&q = 75&w = 400' alt = '...'>
 </div>
 <div class = 'card-body'>
 <div class = 'author'>
 <a href = '#'>
-<img class = 'avatar border-gray' src = '../assets/img/faces/face-3.jpg' alt = '...'>
-<h5 class = 'title'>Mike Andrew</h5>
+<img class = 'avatar border-gray' src = 'zeeshan2.jpg' alt = '...'>
+<h5 class = 'title'>Zeeshan Jutt</h5>
 </a>
 <p class = 'description'>
-michael24
+mzeeshanzafar28
 </p>
 </div>
 <p class = 'description text-center'>
-"Lamborghini Mercy
-                                        <br> Your chick she so thirsty
-                                        <br> I'm in that two seat Lambo"
+"Be patient
+                                        <br> Great things
+                                        <br> take time"
 </p>
 </div>
 <hr>
@@ -324,7 +317,7 @@ Blog
 <script>
 document.write( new Date().getFullYear() )
 </script>
-<a href = 'http://www.creative-tim.com'>Creative Tim</a>, made with love for a better web
+<a href = 'https://github.com/mzeeshanzafar28'>ZEEHOST</a>, made with love for a better web
 </p>
 </nav>
 </div>
@@ -341,7 +334,7 @@ document.write( new Date().getFullYear() )
 <ul class = 'dropdown-menu'>
 <li class = 'header-title'> Sidebar Style</li>
 <li class = 'adjustments-line'>
-<a href = 'javascript:void(0)' class = 'switch-trigger'>
+<a href = 'javascript:void( 0 )' class = 'switch-trigger'>
 <p>Background Image</p>
 <label class = 'switch'>
 <input type = 'checkbox' data-toggle = 'switch' checked = '' data-on-color = 'primary' data-off-color = 'primary'><span class = 'toggle'></span>
@@ -350,7 +343,7 @@ document.write( new Date().getFullYear() )
 </a>
 </li>
 <li class = 'adjustments-line'>
-<a href = 'javascript:void(0)' class = 'switch-trigger background-color'>
+<a href = 'javascript:void( 0 )' class = 'switch-trigger background-color'>
 <p>Filters</p>
 <div class = 'pull-right'>
 <span class = 'badge filter badge-black' data-color = 'black'></span>
@@ -366,22 +359,22 @@ document.write( new Date().getFullYear() )
 <li class = 'header-title'>Sidebar Images</li>
 
 <li class = 'active'>
-<a class = 'img-holder switch-trigger' href = 'javascript:void(0)'>
+<a class = 'img-holder switch-trigger' href = 'javascript:void( 0 )'>
 <img src = '../assets/img/sidebar-1.jpg' alt = '' />
 </a>
 </li>
 <li>
-<a class = 'img-holder switch-trigger' href = 'javascript:void(0)'>
+<a class = 'img-holder switch-trigger' href = 'javascript:void( 0 )'>
 <img src = '../assets/img/sidebar-3.jpg' alt = '' />
 </a>
 </li>
 <li>
-<a class = 'img-holder switch-trigger' href = 'javascript:void(0)'>
+<a class = 'img-holder switch-trigger' href = 'javascript:void( 0 )'>
 <img src = '..//assets/img/sidebar-4.jpg' alt = '' />
 </a>
 </li>
 <li>
-<a class = 'img-holder switch-trigger' href = 'javascript:void(0)'>
+<a class = 'img-holder switch-trigger' href = 'javascript:void( 0 )'>
 <img src = '../assets/img/sidebar-5.jpg' alt = '' />
 </a>
 </li>
@@ -389,42 +382,42 @@ document.write( new Date().getFullYear() )
 <li class = 'button-container'>
 <div class = ''>
 <a href = 'http://www.creative-tim.com/product/light-bootstrap-dashboard' target = '_blank' class = 'btn btn-info btn-block btn-fill'>Download, it's free!</a>
-                </div>
-            </li>
-
-            <li class="header-title pro-title text-center">Want more components?</li>
-
-            <li class="button-container">
-                <div class="">
-                    <a href="http://www.creative-tim.com/product/light-bootstrap-dashboard-pro" target="_blank" class="btn btn-warning btn-block btn-fill">Get The PRO Version!</a>
-                </div>
-            </li>
-
-            <li class="header-title" id="sharrreTitle">Thank you for sharing!</li>
-
-            <li class="button-container">
-				<button id="twitter" class="btn btn-social btn-outline btn-twitter btn-round sharrre"><i class="fa fa-twitter"></i> · 256</button>
-                <button id="facebook" class="btn btn-social btn-outline btn-facebook btn-round sharrre"><i class="fa fa-facebook-square"></i> · 426</button>
-            </li>
-        </ul>
-    </div>
 </div>
- -->
+</li>
+
+<li class = 'header-title pro-title text-center'>Want more components?</li>
+
+<li class = 'button-container'>
+<div class = ''>
+<a href = "http://www.creative-tim.com/product/light-bootstrap-dashboard-pro' target='_blank' class='btn btn-warning btn-block btn-fill">Get The PRO Version!</a>
+</div>
+</li>
+
+<li class = "header-title' id='sharrreTitle">Thank you for sharing!</li>
+
+<li class = 'button-container'>
+<button id = "twitter' class='btn btn-social btn-outline btn-twitter btn-round sharrre'><i class='fa fa-twitter"></i> · 256</button>
+<button id = "facebook' class='btn btn-social btn-outline btn-facebook btn-round sharrre'><i class='fa fa-facebook-square"></i> · 426</button>
+</li>
+</ul>
+</div>
+</div>
+-->
 </body>
 <!--   Core JS Files   -->
-<script src="../assets/js/core/jquery.3.2.1.min.js" type="text/javascript"></script>
-<script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
-<script src="../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+<script src = "../assets/js/core/jquery.3.2.1.min.js' type='text/javascript"></script>
+<script src = "../assets/js/core/popper.min.js' type='text/javascript"></script>
+<script src = "../assets/js/core/bootstrap.min.js' type='text/javascript"></script>
 <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
-<script src="../assets/js/plugins/bootstrap-switch.js"></script>
+<script src = '../assets/js/plugins/bootstrap-switch.js'></script>
 <!--  Google Maps Plugin    -->
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+<script type = "text/javascript' src='https://maps.googleapis.com/maps/api/js?key = YOUR_KEY_HERE"></script>
 <!--  Chartist Plugin  -->
-<script src="../assets/js/plugins/chartist.min.js"></script>
+<script src = '../assets/js/plugins/chartist.min.js'></script>
 <!--  Notifications Plugin    -->
-<script src="../assets/js/plugins/bootstrap-notify.js"></script>
+<script src = '../assets/js/plugins/bootstrap-notify.js'></script>
 <!-- Control Center for Light Bootstrap Dashboard: scripts for the example pages etc -->
-<script src="../assets/js/light-bootstrap-dashboard.js?v=2.0.0 " type="text/javascript"></script>
+<script src = "../assets/js/light-bootstrap-dashboard.js?v = 2.0.0 ' type='text/javascript"></script>
 <!-- Light Bootstrap Dashboard DEMO methods, don't include it in your project! -->
 <script src = '../assets/js/demo.js'></script>
 
